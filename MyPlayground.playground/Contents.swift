@@ -137,3 +137,95 @@ if(x % 2 == 0) {
 
 var randomNumber = arc4random_uniform(10)        // will give you a random number from 0 to 10
 
+/*
+ *  Incrementing loops
+ */
+
+// Run the loop 9 times
+for(var i = 1; i < 10; i++) {
+    println(i)
+}
+
+// Will run 5 times
+for(var i = 1; i < 10; i = i + 2) {
+    println(i)
+}
+
+for(var i = 3; i < 8; i = i + 2) {
+    println(i)
+}
+
+/*
+*  Decrementing loops
+*/
+for(var i = 1; i < 10; i = i + 1) {
+    println(i)
+}
+
+
+// All of the multiples of 5 until 50
+for(var i = 5; i <= 50; i = i + 5) {
+    println(i)
+}
+
+var theArray = [6, 3, 8, 1]
+
+// looping through the array
+for x in theArray {
+    println(x)
+}
+
+// if you want to change the array must use enumerate function
+for (index, x) in enumerate(theArray) {
+    theArray[index] = x + 1
+}
+
+// Half all the values in the array
+var arrayToHalf = [9.0, 6.0, 1.0, 6.0]
+
+for(index, value) in enumerate(arrayToHalf) {
+    arrayToHalf[index] = arrayToHalf[index] / 2.0
+}
+
+/* While loops */
+
+// Declare counter outside the loop
+var i = 1
+
+while(i < 5) {
+    println(i)
+    i++
+}
+
+while(i < 5) {
+    println(i)
+    i++
+}
+
+// while loop to print the first 10 even numbers
+var counter:Int = 0
+
+while(counter < 10) {
+    counter = counter + 2
+    println(counter)
+}
+
+// looping through arrays using while loops
+var whileArray = [6, 2, 9, 1]
+var whileIndex = 0
+
+while (whileIndex < arr.count) {                    // arr.count = number of elements in the array
+    println(whileArray[whileIndex])
+    whileIndex++
+}
+
+// Create an array with 6 numbers and use a while loop to decrease every value by one
+
+var arrayToDecrease = [8, 4, 7, 2, 9, 12]
+var myArrIndex = 0
+
+while(myArrIndex < arrayToDecrease.count) {
+    arrayToDecrease[myArrIndex] = arrayToDecrease[myArrIndex] - 1
+    myArrIndex++
+}
+
